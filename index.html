@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #container{
+            display: flex;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #container1st{
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            margin-right: 70px;
+            margin-left: 70px;
+            align-items: center;
+            text-align: left;
+        }
+        #navbar-logo > img{
+            padding-top: 25%;
+            width: 70%;
+            display: flex;
+        }
+        #mainimg{
+            width: 100%;
+        }
+        #container2nd{
+            width: 50%;
+            display: grid;
+            grid-template-columns:repeat(2,1fr) ;
+            align-items: center;
+        }
+        #searching{
+            width: 90%;
+            padding-top:10px;
+            padding-bottom: 10px;
+        }
+        #profile{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        #profile > img{
+            width: 30%;
+        }
+        #bottom_Container{
+            width: 70%;
+            margin: auto;
+        }
+        .bottomcard{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottomcard > div{
+            width: 80%;
+        }
+        #socialMidiaimg img{
+            width: 15%;
+            height: 40px;
+        }
+        #playstoreimg img{
+            width: 40%;
+        }
+        #guarantee > div{
+            display: flex;
+            justify-content: space-between;
+        }
+        #guarantee > div > img{
+            width: 15%;
+        }
+        #body{
+            width: 100%;
+        }
+        #mainimg{
+            width: 100%;
+        }
+        #DOD{
+            width: 100%;
+            padding-bottom: 4%;
+        }
+        #DOD > img{
+            width: 12%;
+        }
+        #BOMEB{
+            width: 100%;
+            padding-top: 4%;
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            gap: 5px;
+            padding-bottom: 4%;
+        }
+        #BOMEB > img{
+            width: 100%;
+        }
+        #TOP_P{
+            width: 100%;
+            padding-bottom: 4%;
+            padding-top: 4%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #TOP_P > img{
+            width:14%;
+        }
+        #CTBag{
+            width: 100%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            gap: 2%;
+        }
+        #CTBag > img{
+            width: 100%;
+        }
+        #DEAL_TOPBRANDS{
+            width: 100%;
+            display: grid;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            grid-template-columns: repeat(8,1fr);
+            gap: 1%;
+        }
+        #DEAL_TOPBRANDS > img{
+            width: 90%;
+        }
+        #BRANDS_AT_SLASHED_PRICES{
+            width: 100%;
+            display: grid;
+            padding-top: 4%;
+            padding-bottom: 8%;
+            grid-template-columns: repeat(7,1fr);
+            gap: 1%;
+        }
+        #BRANDS_AT_SLASHED_PRICES > img{
+            width: 100% ;
+        }
+        
+    </style>
+</head>
+<body>
+   <div id="container">
+    <div id="container1st">
+        <div> <a id="navbar-logo"href="">
+            <img  src="./logo_img/Main Logo.jpg" alt="error"></a>
+        </div>
+        <div><a href="">MEN</a></div>
+        <div><a href="">WOMEN</a></div>
+        <div><a href="">KIDS</a></div>
+        <div><a href="">HOME & LIVING</a></div>
+        <div><a href="">OFFERS</a></div>
+    </div>
+
+    <div id="container2nd">
+        <div>
+            <input id="searching" type="text" placeholder="Search for Product,Brad & More" />
+        </div>
+        <div id="profile">
+            <img  src="https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=is&k=20&c=3g5FPg9un7Ktq2_TUpKqpnTL9WpSvNB0SzN9RrXSUog=" alt="error">
+            <img src="https://cdn3.iconfinder.com/data/icons/marketing-e-commerce/128/icons_-_marketing-41-512.png" alt="error">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/002/205/906/small/shopping-bag-icon-free-vector.jpg" alt="error">
+            <h3>
+                <a  href="">Profile</a>
+            </h3>
+            <h3>
+                <a href="http://127.0.0.1:5500/wishlist.html">Wishlist</a>
+            </h3>
+            <h3><a href="http://127.0.0.1:5500/Cart.html">Bag</a></h3>
+        </div>
+
+    </div>
+        
+   </div>
+   <!-- Body -->
+   <div id="body">
+    <img id="mainimg" src="./logo_img/Mainimg.png" alt="error">
+    <h2 >DEAL OF THE DAY</h2>
+    <div id="DOD">
+        <img src="./DODimg/1stimg.png" alt="error">
+        <img src="./DODimg/2ndimg.png" alt="error">
+        <img src="./DODimg/3rdimg.png" alt="error">
+        <img src="./DODimg/4thimg.png" alt="error">
+        <img src="./DODimg/5thimg.png" alt="error">
+        <img src="./DODimg/6thimg.png" alt="error">
+        <img src="./DODimg/7thimg.png" alt="error">
+        <img src="./DODimg/8thimg.png" alt="error">
+    </div>
+    <h2>BEST OF MYNTRA EXCLUSIVE BRANDS</h2>
+    <div id="BOMEB">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/1st.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/2nd.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/3rd.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/4th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/5th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/6th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/7th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/8th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/9th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/10th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/11th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/12th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/13th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/14th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/15th.png" alt="error">
+        <img src="./BEST_OF_MYNTRA_EXCLUSIVE_BRANDS_img/16th.png" alt="error">
+    </div>
+    <h2>TOP PICKS</h2>
+    <div id="TOP_P">
+        <img src="./TOP_PICKS/1st.png" alt="error">
+        <img src="./TOP_PICKS/2nd.png" alt="error">
+        <img src="./TOP_PICKS/3rd.png" alt="error">
+        <img src="./TOP_PICKS/4th.png" alt="error">
+        <img src="./TOP_PICKS/5th.png" alt="error">
+        <img src="./TOP_PICKS/6th.png" alt="error">
+        <img src="./TOP_PICKS/7th.png" alt="error">
+    </div>
+    <h2>CATEGORIES TO BAG</h2>
+    <div id="CTBag">
+        <img src="./CATEGORIES_TO_BAG/1st.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/2nd.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/3rd.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/4th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/5th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/6th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/7th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/8th.png" alt="error">
+        <img id="Cosmatics" src="./CATEGORIES_TO_BAG/9th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/10th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/11th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/12th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/13th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/14th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/15th.png" alt="error">
+        <img  src="./CATEGORIES_TO_BAG/16th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/17th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/18th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/19th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/20th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/21th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/22th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/23th.png" alt="error">
+        <img src="./CATEGORIES_TO_BAG/24th.png" alt="error">
+    </div>
+
+    <h2>DEALS ON TOP BRANDS</h2>
+    <div id="DEAL_TOPBRANDS">
+        <img src="./Deals on top Brands/1st.png" alt="error">
+        <img src="./Deals on top Brands/2nd.png" alt="error">
+        <img src="./Deals on top Brands/3rd.png" alt="error">
+        <img src="./Deals on top Brands/4th.png" alt="error">
+        <img src="./Deals on top Brands/5th.png" alt="error">
+        <img src="./Deals on top Brands/6th.png" alt="error">
+        <img src="./Deals on top Brands/7th.png" alt="error">
+        <img src="./Deals on top Brands/8th.png" alt="error">
+        <img src="./Deals on top Brands/9th.png" alt="error">
+        <img src="./Deals on top Brands/10th.png" alt="error">
+        <img src="./Deals on top Brands/11th.png" alt="error">
+        <img src="./Deals on top Brands/12th.png" alt="error">
+        <img src="./Deals on top Brands/13th.png" alt="error">
+        <img src="./Deals on top Brands/14th.png" alt="error">
+        <img src="./Deals on top Brands/15th.png" alt="error">
+        <img src="./Deals on top Brands/16th.png" alt="error">
+        <img src="./Deals on top Brands/17th.png" alt="error">
+        <img src="./Deals on top Brands/18th.png" alt="error">
+        <img src="./Deals on top Brands/19th.png" alt="error">
+        <img src="./Deals on top Brands/20th.png" alt="error">
+        <img src="./Deals on top Brands/21th.png" alt="error">
+        <img src="./Deals on top Brands/22th.png" alt="error">
+        <img src="./Deals on top Brands/23th.png" alt="error">
+        <img src="./Deals on top Brands/24th.png" alt="error">
+    </div>
+
+    <h2>BRANDS AT SLASHED PRICES</h2>
+    <div id="BRANDS_AT_SLASHED_PRICES">
+        <img src="./Brands At SLASHED Prices/1st.png" alt="error">
+        <img src="./Brands At SLASHED Prices/2nd.png" alt="error">
+        <img src="./Brands At SLASHED Prices/3rd.png" alt="error">
+        <img src="./Brands At SLASHED Prices/4th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/5th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/6th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/7th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/8th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/9th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/10th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/11th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/12th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/13th.png" alt="error">
+        <img src="./Brands At SLASHED Prices/14th.png" alt="error">
+    </div>
+    <div>
+
+    </div>
+   </div>
+
+   <br>
+   <br>
+    <!-- Bottom -->
+   <div id="bottom_Container">
+    <div class="bottomcard">
+        <div>
+            <h4>ONLINE SHOPPING</h4>
+             <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>Home & Living</li>
+                <li>Beauty</li>
+                <li>Gift Cards</li>
+                <li>Myntra Insider</li>
+             </ul>
+             <br>
+            <h4>USEFUL LINKS</h4>
+            <br>
+              <ul>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Site Map</li>
+                <li>Corporate Information</li>
+                <li>Whitehat</li>
+              </ul>
+        </div>
+        <div>
+            <h4>CUSTOMER POLICIES</h4>
+            <br>
+            <ul>
+                <li>Contact Us</li>
+                <li>FAQ</li>
+                <li>T&C</li>
+                <li>Terms Of Use</li>
+                <li>Track Orders</li>
+                <li>Shipping</li>
+                <li>Cancellation</li>
+                <li>Returns</li>
+                <li>Privacy policy</li>
+                <li>Grievance Officer</li>
+            </ul>
+        </div>
+        <div>
+            <h4 >EXPERIENCE MYNTRA APP ON MOBILE</h4>
+            <div id="playstoreimg">
+                <img src="https://th.bing.com/th/id/R.a6d57eab399df5d902c94f3d747e58d4?rik=66l%2bOK6PlK%2f8iA&riu=http%3a%2f%2fwww.a-sure.net%2fwp-content%2fuploads%2f2017%2f11%2fdownload-on-google-play.png&ehk=%2biYL4WitBP%2bJ4F0rwwxJR93QsygjTLUEeTLyDAy5V3c%3d&risl=&pid=ImgRaw&r=0" alt="error">
+                <img src="https://th.bing.com/th/id/OIP.fn_qr7uzdYZfa8zVcFbNYgHaCj?pid=ImgDet&rs=1" alt="error">
+            </div>
+            <br>
+            <h4>KEEP IN TOUCH</h4>
+            <div id="socialMidiaimg">
+                <img src="https://th.bing.com/th?id=OIP.Ua5AXhtGRgPuisZVmetclQHaFL&w=298&h=209&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="error">
+                <img src="https://th.bing.com/th?id=OIP.IOlJ2wJrAUpUh6T1la8kxAHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="error">
+                <img src="https://www.bing.com/th?id=OIP.aByvAl4Fl4Dk3N9fA3IudwHaFM&w=235&h=165&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="error">
+                <img src="https://th.bing.com/th?id=OIP.owofzNMUTWCPYZG57wBosQHaHW&w=251&h=248&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="error">
+            </div>
+        </div>
+
+        <div>
+            <div id="guarantee">
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <h3>100% ORIGINAL guarantee for all products at myntra.com</h3>
+                </div>
+                <br>
+                <div>
+                    <img src="https://th.bing.com/th/id/OIP.pvwzFCZ5oRLfyyExBsZ45AHaFU?pid=ImgDet&rs=1" alt="error">
+                    <h4>Return within 30days of receiving your order</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <div>
+        <h5>POPULAR SEARCHES</h5>
+        <br>
+        <p>Makeup  Dresses For Girls  T-Shirts  Sandals  Headphones  Babydolls  Blazers For Men  Handbags  Ladies Watches  Bags  Sport Shoes  Reebok Shoes  Puma Shoes  Boxers  Wallets  Tops  Earrings  Fastrack Watches  Kurtis  Nike  Smart Watches  Titan Watches  Designer Blouse  Gowns  Rings  Cricket Shoes  Forever 21  Eye Makeup  Photo Frames  Punjabi Suits  Bikini  Myntra Fashion Show  Lipstick  Saree  Watches  Dresses  Lehenga  Nike Shoes  Goggles  Bras  Suit  Chinos  Shoes  Adidas Shoes  Woodland Shoes  Jewellery  Designers Sarees</p>
+    </div>
+    <br>
+    <br><br>
+    <hr>
+    <div>
+        <h4 id="line">ONLINE SHOPPING MADE EASY AT MYNTRA</h4>
+         <p>
+         If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home and get your favourites delivered right to your doorstep.
+        </p>
+    </div>
+
+
+   </div>
+
+</body>
+<script>
+    let navbar_sliding_logo = document.getElementById("mainimg");
+    let images = ["./logo_img/Mainimg.png","./logo_img/2nd.png","./logo_img/3rd.png","./logo_img/4th.png","./logo_img/5th.png","./logo_img/6th.png","./logo_img/7th.png"];
+    let c=0;
+    setInterval(function(){
+        c++;
+        if(c == 6 )
+        {
+            c=0;
+        }
+        navbar_sliding_logo.setAttribute("src",images[c]);
+    },2000);
+
+    let Cosmatics = document.getElementById("Cosmatics");
+
+    let APIURL = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`;
+    
+    let cart = JSON.parse(localStorage.getItem("CartData"));
+
+    if(cart == null)
+    {
+        cart = [];
+    }
+
+    let wish_list = JSON.parse(localStorage.getItem("wish_list")) || [];
+
+    Cosmatics.addEventListener("click",function(){
+        featchData(APIURL);
+    })
+    async function featchData(APIURL){
+            try{
+                let res = await fetch(APIURL);
+                let data = await res.json();
+                console.log(data);
+                DisplayData(data);
+            }
+            catch(error){
+                console.log(error);
+            }
+    }
+    let container = document.getElementById("body");
+
+    function DisplayData(data){
+        container.innerHTML = "";
+        data.forEach(function(ele,i){
+            let card = document.createElement("div");
+
+            let image = document.createElement("img")
+            image.src = ele.image_link;
+
+            let name = document.createElement("h2");
+            name.innerText = ele.name;
+
+            let brand = document.createElement("h4");
+            brand.innerText = ele.brand;
+
+            let price = document.createElement("h5");
+            price.innerText = "$"+ ele.price;
+
+            let CartBtn = document.createElement("button");
+            CartBtn.innerText = "Add To Cart";
+            CartBtn.style.padding = "10px";
+            
+
+            let WishlistBtn = document.createElement("button");
+            let wishlogo = document.createElement("img");
+            wishlogo.src = "https://cdn3.iconfinder.com/data/icons/marketing-e-commerce/128/icons_-_marketing-41-512.png";
+            WishlistBtn.style.width = "10%";
+            wishlogo.style.width = "55%"
+            WishlistBtn.append(wishlogo);
+
+            CartBtn.addEventListener("click",function(){
+
+                let flag = true;
+                for(let i=0; i < cart.length ; i++)
+                {
+                    if( ele.id == cart[i].id)
+                    {
+                        flag = false;
+                    }
+                }
+                if(flag == true)
+                {
+                    cart.push(ele);
+                    CartBtn.innerText = "Added to Cart";
+                }  
+                localStorage.setItem("CartData",JSON.stringify(cart));
+            })
+
+            WishlistBtn.addEventListener("click",function(){
+                wish_list.push(ele);
+                localStorage.setItem("wish_list",JSON.stringify(wish_list));
+                wishlogo.src = "https://thumbs.dreamstime.com/b/red-heart-icon-isolated-white-background-red-heart-icon-isolated-white-background-day-valentines-love-flat-logo-tattoo-155649133.jpg";
+                WishlistBtn.style.width = "15%";
+                wishlogo.style.width = "55%"
+               // wishlogo.style.backgroundColor = "red";
+
+            })
+            card.append(image, name, brand,price,CartBtn,WishlistBtn);
+            container.append(card);
+            container.style.display = "grid";
+            container.style.gridTemplateColumns = "repeat(4,1fr)";
+        })
+    }
+</script>
+</html>

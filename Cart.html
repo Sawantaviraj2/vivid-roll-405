@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal cart</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #container { 
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap : 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    
+</body>
+
+<script>
+    let container  = document.getElementById("container");
+    let CartData = JSON.parse(localStorage.getItem("CartData"));
+    DisplayCartData(CartData);
+
+    function DisplayCartData(CartData)
+    {
+        container.innerHTML = "";
+        CartData.forEach(function(element,i){
+            let box = document.createElement("div");
+
+            let image = document.createElement("img");
+            image.src = element.image_link;
+
+            let name = document.createElement("h2");
+            name.innerText = element.name;
+
+            let brand = document.createElement("h4");
+            brand.innerText = element.brand;
+
+            let price = document.createElement("h5");
+            price.innerText = "Price :"+ "$"+element.price;
+
+
+            let c = 1; 
+
+            let total = document.createElement("p");
+            total.innerText = "Total :"+ "$" + Number(element.price)*c;
+
+
+            let NumberOfProduct = document.createElement("h5");
+            NumberOfProduct.innerText = c;
+
+           // element.c= NumberOfProduct.innerText ;
+
+            let add_product = document.createElement("button");
+            add_product.innerText = "+";
+
+            add_product.style.width = "8%";
+            let sub_product = document.createElement("button");
+            sub_product.innerText = "-";
+            sub_product.style.width = "8%";
+            add_product.addEventListener("click",function(){
+                c++;
+                if(c==0)
+                {
+                    c=1;
+                }
+                NumberOfProduct.innerText = c;
+                total.innerText ="Total :"+"$"+ Number(element.price)*c;
+            })
+            sub_product.addEventListener("click",function(){
+                c--;
+                if(c==0)
+                {
+                    c=1;
+                }
+                NumberOfProduct.innerText = c;
+                total.innerText ="Total :"+"$"+ Number(element.price)*c;
+            })
+
+            let DeleteBtn = document.createElement
+
+            
+
+
+            box.append(image, name, brand,price, add_product, NumberOfProduct, add_product, sub_product,total);
+            container.append(box);
+            box.style.border = "solid 1px red";
+            box.style.padding = "15px";
+        })
+    }
+
+</script>
+</html>
