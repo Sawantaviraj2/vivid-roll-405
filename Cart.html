@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal cart</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #container { 
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap : 10px;
+        }
+        #bt{
+            width: 30%;
+            padding-left: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div id="bt">
+    </div>
+    <button><h3><a href="payment.html">Payment</a></h3></button>
+
+    <a href=""></a>
+    <div id="container">
+
+    </div>
+    
+</body>
+
+<script>
+    let container  = document.getElementById("container");
+    let CartData = JSON.parse(localStorage.getItem("CartData"))||[]
+    DisplayCartData(CartData);
+
+    function DisplayCartData(CartData)
+    {
+        container.innerHTML = "";
+        CartData.forEach(function(element,i){
+            let box = document.createElement("div");
+
+            let image = document.createElement("img");
+            image.src = element.image_link;
+
+            let name = document.createElement("h2");
+            name.innerText = element.name;
+
+            let brand = document.createElement("h4");
+            brand.innerText = element.brand;
+
+            let price = document.createElement("h5");
+            price.innerText = "Price :"+ "$"+element.price;
+
+
+            //let c = 1; 
+
+            let total = document.createElement("p");
+            //total.innerText = "Total :"+ "$" + Number(element.price)
+            
+            
+            let del = document.createElement("button");
+            del.innerText="Delete";
+            del.addEventListener("click",()=>{
+                let remove = CartData.filter((elm,index)=>{
+                    return index!==i
+                })
+                localStorage.setItem("CartData",JSON.stringify(remove))
+                DisplayCartData(remove)
+            })
+            let quantity= document.createElement("span")
+            quantity=element.quantity
+            let incbtn= document.createElement("button")
+            incbtn.innerText="+"
+            incbtn.addEventListener("click",(()=>{
+                element=element.quantity++
+                localStorage.setItem("CartData",JSON.stringify(CartData))
+                DisplayCartData(CartData)
+            }))
+            let decbtn= document.createElement("button")
+            decbtn.innerText="-"
+            decbtn.addEventListener("click",(()=>{
+                
+                element=element.quantity--;
+                if(element.quantity < 1)
+                {
+                  element.quantity = 1;
+                }
+
+                localStorage.setItem("CartData",JSON.stringify(CartData))
+                DisplayCartData(CartData)
+            }))
+            let sum=0
+            for(let i=0;i<CartData.length;i++)
+            {
+                sum+=CartData[i].price*CartData[i].quantity
+            }
+            console.log(sum)
+            let bt = document.getElementById("bt")
+            bt.innerText=sum
+
+            localStorage.setItem("totalPay",JSON.stringify(sum));
+
+
+            box.append(image, name, brand,price, incbtn,quantity, decbtn,total, del);
+            container.append(box);
+            box.style.border = "solid 1px red";
+            box.style.padding = "15px";
+        })
+    }
+
+</script>
+</html>
