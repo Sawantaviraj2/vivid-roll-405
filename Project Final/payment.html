@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id ="totalpayment"></h1>
+    </div>
+    <div>
+        <h3>Payment Method</h3>
+
+        
+        <button><h5>Payment By Card</h5></button>
+        <button><h5>Payment By UPI</h5></button>
+        <button><h5>Payment By Scanner</h5></button>
+        <button><h5>Payment By Net Banking</h5></button>
+        <button><h5>Cash On delevery </h5></button>
+    </div>
+</body>
+
+<script>
+    let totalPay = JSON.parse(localStorage.getItem("totalPay"));
+    let totalpayment = document.getElementById("totalpayment");
+    totalpayment.innerText = totalPay;
+</script>
+</html>
